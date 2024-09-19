@@ -112,7 +112,7 @@ function CartDetailsPage() {
                                 disabled={cartItems.length === 0}
                                 onClick={checkoutHandler}
                             >
-                                Proceed To Checkout
+                                Proceed to Checkout
                             </Button>
                         </ListGroup.Item>
                     </ListGroup>
