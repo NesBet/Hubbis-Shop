@@ -43,8 +43,8 @@ function PaymentPage() {
 
                         <Form.Check
                             type='radio'
-                            label='Bkash'
-                            id='Bkash'
+                            label='Mpesa'
+                            id='Mpesa'
                             name='paymentMethod'
                             onChange={(e) => setPaymentMethod(e.target.id)}
                         >
