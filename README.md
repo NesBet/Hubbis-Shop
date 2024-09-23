@@ -1,19 +1,19 @@
 # Hubbis-Shop built using Django and React
 
 ## Homepage
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/homepage.jpeg?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/Homepage.png?raw=true)
 
 ## Cart page
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/cart-page.png?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/cart-page.png?raw=true)
 
-## User can view product details and give review
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/product-details.jpeg?raw=true)
+## User can view product details and give review once logged in
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/review-page.png?raw=true)
 
 ## User Login
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/user-login.jpeg?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/user-login.png?raw=true)
 
 ## User Profile
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/user-profile.jpeg?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/user-profile.png?raw=true)
 
 ## User Order
 ![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/user-order.jpeg?raw=true)
@@ -34,17 +34,13 @@
 ![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/admin-view-orders.png?raw=true)
 
 ## Admin can edit user
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/admin-edit-user.jpeg?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/admin-edit-users.png?raw=true)
 
 ## Admin can edit product
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/admin-edit-product.jpeg?raw=true)
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/admin-edit-delete-products.png?raw=true)
 
 ## Registration
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/register.jpeg?raw=true)
-
-## Login
-![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/login.jpeg?raw=true)
-
+![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/user-register.png?raw=true)
 
 
 
