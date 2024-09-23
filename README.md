@@ -1,4 +1,4 @@
-# Ecommerce website in django-react
+# Hubbis-Shop built using Django and React
 
 ## Homepage
 ![preview](https://github.com/I-am-Shibly/django-react-ecommerce-website/blob/main/preview/homepage.jpeg?raw=true)
