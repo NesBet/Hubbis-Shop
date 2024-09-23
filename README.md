@@ -39,7 +39,7 @@
 
 ## Clone the repository;
 ##
-    git pull https://github.com/NesBet/Hubbis-Shop.git
+    git clone https://github.com/NesBet/Hubbis-Shop.git
 ##
 
 # Install all frontend dependencies;
