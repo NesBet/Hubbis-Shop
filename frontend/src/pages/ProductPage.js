@@ -5,6 +5,7 @@ import Rating from '../components/Rating'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { IndividualProductDetails, createReviewAction } from '../redux/actions/productActions'
+import { addToCart } from '../redux/actions/cartActions' // Import the addToCart action
 import { useSelector, useDispatch } from 'react-redux'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../redux/constants/productConstants'
 
@@ -40,7 +41,7 @@ function ProductPage() {
   }, [dispatch, id, successReview])
 
   const addToCartHandler = () => {
-    history(`/cart/${id}?qty=${qty}`)
+    dispatch(addToCart(id, qty))
   }
 
   const submitHandler = (e) => {
