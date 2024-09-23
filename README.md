@@ -36,12 +36,13 @@
 
 
 ## Setup Instructions:
+
 ## Clone the repository;
 ##
     git pull https://github.com/NesBet/Hubbis-Shop.git
 ##
 
-# Install frontend dependencies;
+# Install all frontend dependencies;
 ##
     cd frontend && npm i
 ##
@@ -51,14 +52,9 @@
     source myenv/bin/activate
 ##
 
-# Install backend dependencies;
+# Install all backend dependencies;
 ##
-    pip install django  
-    pip install djangorestframework  
-##
-    pip install django-cors-headers
-##
-    pip install djangorestframework simplejwt
+    pip install django djangorestframework django-cors-headers djangorestframework[simplejwt]
 ##
 
 # Start the backend server;
