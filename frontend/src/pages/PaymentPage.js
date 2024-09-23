@@ -39,16 +39,7 @@ function PaymentPage() {
                             name='paymentMethod'
                             onChange={(e) => setPaymentMethod(e.target.id)}
                         >
-                        </Form.Check>
-
-                        <Form.Check
-                            type='radio'
-                            label='Mpesa'
-                            id='Mpesa'
-                            name='paymentMethod'
-                            onChange={(e) => setPaymentMethod(e.target.id)}
-                        >
-                        </Form.Check>
+                        </Form.Check>    
                     </Col>
                 </Form.Group>
 

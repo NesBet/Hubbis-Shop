@@ -179,7 +179,7 @@ function OrderPage() {
                                         <Button
                                             type='button'
                                             className='w-100 btn btn-danger'
-                                            onClick={() => deleteHandler(id)}
+                                            onClick={() => deleteHandler(id) || navigate('/')}
                                         >
                                             Delete Order
                                         </Button>
@@ -189,7 +189,7 @@ function OrderPage() {
                                         <Button
                                             type='button'
                                             className='w-100 btn btn-danger'
-                                            onClick={() => deleteHandler(id)}
+                                            onClick={() => deleteHandler(id) || navigate('/')}
                                         >
                                             Cancel Order
                                         </Button>
