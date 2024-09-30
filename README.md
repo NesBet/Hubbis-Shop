@@ -54,7 +54,7 @@
 
 # Install all backend dependencies;
 ##
-    pip install django djangorestframework django-cors-headers djangorestframework[simplejwt]
+    pip install django djangorestframework django-cors-headers djangorestframework-simplejwt
 ##
 
 # Start the backend server;
