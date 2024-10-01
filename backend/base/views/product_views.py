@@ -1,3 +1,4 @@
+# Import components 
 from base.models import Product, Review
 from base.serializers import ProductSerializer, serializers
 from django.contrib.auth.models import User
