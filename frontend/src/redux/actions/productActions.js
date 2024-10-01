@@ -1,3 +1,4 @@
+// Import necessary components
 import axios from 'axios'
 import {
     PRODUCT_CREATE_SUCCESS,
