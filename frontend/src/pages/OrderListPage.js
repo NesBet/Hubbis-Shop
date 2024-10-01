@@ -73,11 +73,9 @@ function OrderListPage() {
                                 </td>
                 
                                 <td>
-                                    <LinkContainer to={`/order/${order._id}`}>
-                                        <Button variant='primary' className='btn-sm'>
-                                            Details
-                                        </Button>
-                                    </LinkContainer>
+                                    <Button variant='primary' className='btn-sm' onClick={() => { window.location.reload(); window.location.href = `/order/${order._id}`; }}>
+                                        Details
+                                    </Button>
                                 </td>
                             </tr>
                         ))}

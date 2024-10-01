@@ -29,11 +29,13 @@ function CartDetailsPage() {
     }
 
     const checkoutHandler = () => {
-        if (!userInfo)
-            navigate('/login')  
-        else
-            navigate('/shipping')
-    }
+        if (!userInfo) {
+            navigate('/login');
+        } else {
+            navigate('/shipping'); // Navigate to the shipping page
+            window.location.reload(); // Simulate a silent reload
+        }
+    };
 
     return (
         <Row>

@@ -97,14 +97,14 @@ export const deleteOrder = (id) => async (dispatch, getState) => {
                 Authorization: `Bearer ${userInfo.token}`
             }
         }
-        const { data } = await axios.delete(
-            `/api/orders/delete/${id}`,
+        await axios.delete(
+            `/api/orders/delete/${id}/`,
             config
         )
 
         dispatch({
             type: ORDER_DELETE_SUCCESS,
-            payload: data
+            payload: id
         })
 
         dispatch({
