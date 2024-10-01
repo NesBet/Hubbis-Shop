@@ -1,6 +1,7 @@
 from base.views import user_views as views
 from django.urls import URLPattern, path
 
+# This is the user urls
 urlpatterns = [
     path('login/', views.MyTokenObtainPairView.as_view(),
          name='token_obtain_pair'),

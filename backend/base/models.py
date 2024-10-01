@@ -2,7 +2,7 @@ from unicodedata import category
 from django.db import models
 from django.contrib.auth.models import User
 
-
+# Product model
 class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200, null=True, blank=True)
@@ -22,7 +22,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-
+# Review model
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
@@ -35,7 +35,7 @@ class Review(models.Model):
     def __str__(self):
         return str(self.rating)
 
-
+# Order model
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     paymentMethod = models.CharField(max_length=200, null=True, blank=True)
@@ -56,7 +56,7 @@ class Order(models.Model):
     def __str__(self):
         return str(self.createdAt)
 
-
+# Order item model
 class OrderItem(models.Model):
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
@@ -70,7 +70,7 @@ class OrderItem(models.Model):
     def __str__(self):
         return str(self.name)
 
-
+# Shipping address model
 class ShippingAddress(models.Model):
     order = models.OneToOneField(
         Order, on_delete=models.CASCADE, null=True, blank=True)

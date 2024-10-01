@@ -44,6 +44,7 @@ def addOrderItems(request):
         )
 
         # (3) Create order items and set order to orderItem relationship
+
         for i in orderItems:
             product = Product.objects.get(_id=i['product'])
 
@@ -133,4 +134,3 @@ def deleteOrder(request, pk):
     order = Order.objects.get(_id=pk)
     order.delete()
     return Response('Order Deleted')
-

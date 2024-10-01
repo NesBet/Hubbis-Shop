@@ -1,3 +1,4 @@
+# Import modules
 from base.views import product_views as views
 from django.urls import URLPattern, path
 

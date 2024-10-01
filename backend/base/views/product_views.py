@@ -98,6 +98,7 @@ def deleteProduct(request, pk):
     return Response('Product Deleted')
 
 
+# Upload image
 @api_view(['POST'])
 def uploadImage(request):
     data = request.data
@@ -111,6 +112,7 @@ def uploadImage(request):
     return Response('Image was uploaded')
 
 
+# Create product review
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def createProductReview(request, pk):

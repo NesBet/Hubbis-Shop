@@ -1,7 +1,8 @@
 from django.contrib import admin
 from .models import *
-# Register all your models here.
+# Register your models here.
 
+# Registering all models
 admin.site.register(Product)
 admin.site.register(Review)
 admin.site.register(Order)

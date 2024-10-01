@@ -1,7 +1,8 @@
-from django.urls import URLPattern, path # import necessary components 
+# Import necessary components 
+from django.urls import URLPattern, path
 from base.views import order_views as views
 
-
+# Different project urls
 urlpatterns = [
     path('', views.getOrders, name='orders'),
 

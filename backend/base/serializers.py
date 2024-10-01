@@ -27,7 +27,7 @@ class UserSerializer(serializers.ModelSerializer):
     def get_isAdmin(self, obj):
         return obj.is_staff
 
-
+# Adding serializer to user data
 class UserSerializerWithToken(UserSerializer):
     token = serializers.SerializerMethodField(read_only=True)
     class Meta:
@@ -38,7 +38,7 @@ class UserSerializerWithToken(UserSerializer):
         token = RefreshToken.for_user(obj)
         return str(token.access_token)
 
-
+# Reviewing serializer
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review

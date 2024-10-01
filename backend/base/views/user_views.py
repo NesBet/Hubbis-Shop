@@ -15,7 +15,7 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-
+# Token serializer
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
@@ -26,11 +26,11 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
             data[key] = value
         return data
 
-
+# Token view
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
-
+# Register user
 @api_view(['POST'])
 def registerUser(request):
     data = request.data
@@ -50,7 +50,7 @@ def registerUser(request):
         message = {'detail': 'User with this email already exists'}
         return Response(message, status=status.HTTP_400_BAD_REQUEST)
 
-
+# Update user profile
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def updateUserProfile(request):
@@ -69,7 +69,7 @@ def updateUserProfile(request):
 
     return Response(serializer.data)
 
-
+# Get user profile
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getUserProfile(request):
@@ -77,7 +77,7 @@ def getUserProfile(request):
     serializer = UserSerializer(user, many=False)
     return Response(serializer.data)
 
-
+# Get all users
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
 def getUsers(request):
@@ -85,7 +85,7 @@ def getUsers(request):
     serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
 
-
+# Get user by id
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
 def getUserById(request, pk):
@@ -93,7 +93,7 @@ def getUserById(request, pk):
     serializer = UserSerializer(user, many=False)
     return Response(serializer.data)
 
-
+# Update user
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def updateUser(request, pk):
@@ -112,7 +112,7 @@ def updateUser(request, pk):
 
     return Response(serializer.data)
 
-
+# Delete user
 @api_view(['DELETE'])
 @permission_classes([IsAdminUser])
 def deleteUser(request, pk):
