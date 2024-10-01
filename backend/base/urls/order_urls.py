@@ -1,4 +1,4 @@
-from django.urls import URLPattern, path
+from django.urls import URLPattern, path # import necessary components 
 from base.views import order_views as views
 
 
