@@ -1,3 +1,4 @@
+# Import necessary components
 from base.views import user_views as views
 from django.urls import URLPattern, path
 
