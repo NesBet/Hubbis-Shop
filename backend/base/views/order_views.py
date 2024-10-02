@@ -129,8 +129,15 @@ def updateOrderToDelivered(request, pk):
 
 
 @api_view(['DELETE'])
-@permission_classes([IsAdminUser])
+@permission_classes([IsAuthenticated])
 def deleteOrder(request, pk):
-    order = Order.objects.get(_id=pk)
-    order.delete()
-    return Response('Order Deleted')
+    user = request.user
+    try:
+        order = Order.objects.get(_id=pk)
+        if user.is_staff or order.user == user:
+            order.delete()
+            return Response('Order Deleted')
+        else:
+            return Response({'detail': 'Not authorized to delete this order'}, status=status.HTTP_400_BAD_REQUEST)
+    except Order.DoesNotExist:
+        return Response({'detail': 'Order does not exist'}, status=status.HTTP_404_NOT_FOUND)
