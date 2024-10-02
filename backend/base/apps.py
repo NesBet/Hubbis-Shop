@@ -1,3 +1,4 @@
+# Import components
 from django.apps import AppConfig
 
 
