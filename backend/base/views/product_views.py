@@ -90,7 +90,7 @@ def updateProduct(request, pk):
     return Response(serializer.data)
 
 
-@api_view(['DELETE'])
+@api_view(['DELETE']) # Update to handle delete
 @permission_classes([IsAdminUser])
 def deleteProduct(request, pk):
     product = Product.objects.get(_id=pk)
