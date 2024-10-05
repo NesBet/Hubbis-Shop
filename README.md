@@ -34,7 +34,7 @@
 ![preview](https://github.com/NesBet/Hubbis-Shop/blob/main/highlights/user-register.png?raw=true)
 
 ## Project demo
-![Hubbis Video Preview] (http://img.youtube.com/vi/rWvbAtUIRUWPVxwi/0.jpg)](http://www.youtube.com/watch?v=rWvbAtUIRUWPVxwi "Hubbis Shop")
+![![Hubbis Video Preview] (https://raw.github.com/NesBet/Hubbis-Shop/blob/main/highlights/cGc.jpg)](https://raw.github.com/NesBet/Hubbis-Shop/blob/main/highlights/project_demo.mp4)
 
 ## Setup Instructions:
 
