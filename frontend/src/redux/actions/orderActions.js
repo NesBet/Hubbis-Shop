@@ -1,4 +1,4 @@
-// Import necessary components
+// Import all necessary components
 import axios from 'axios'
 import {
     ORDER_CREATE_FAIL,
