@@ -96,7 +96,7 @@ function Footer() {
       </section>
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}>
-        © 2024 Copyright: 
+        © 2025 Copyright:
         <a className='text-reset fw-bold p-2' href='/'>
            Hubbis Shop
         </a>
