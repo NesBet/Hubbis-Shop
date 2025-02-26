@@ -1,4 +1,4 @@
-# Import components 
+# Import components
 from base.models import Product, Review
 from base.serializers import ProductSerializer, serializers
 from django.contrib.auth.models import User
@@ -19,7 +19,7 @@ def getProducts(request):
         name__icontains=query).order_by('-createdAt')
 
     page = request.query_params.get('page')
-    paginator = Paginator(products, 8)
+    paginator = Paginator(products, 9)
 
     try:
         products = paginator.page(page)
@@ -90,7 +90,7 @@ def updateProduct(request, pk):
     return Response(serializer.data)
 
 
-@api_view(['DELETE']) # Update to handle delete
+@api_view(['DELETE'])  # Update to handle delete
 @permission_classes([IsAdminUser])
 def deleteProduct(request, pk):
     product = Product.objects.get(_id=pk)

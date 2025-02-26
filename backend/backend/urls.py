@@ -1,4 +1,4 @@
-from re import template
+## Import modules
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
